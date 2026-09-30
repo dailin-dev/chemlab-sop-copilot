@@ -1,0 +1,47 @@
+﻿
+# PDF 解析
+
+pypdf
+
+pdfplumber
+
+# RAG 编排与切块
+
+langchain
+
+langchain-text-splitters
+
+# Embedding 与向量库
+
+sentence-transformers
+
+chromadb
+
+# LLM 调用（OpenAI 兼容接口，用于 DeepSeek）
+
+openai
+
+# Web 框架与前端
+
+fastapi
+
+uvicorn
+
+gradio
+
+# 工具库
+
+requests
+
+pandas
+
+python-dotenv
+
+pydantic-settings
+
+loguru
+
+# 测试
+
+pytest
+
