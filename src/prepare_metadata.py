@@ -22,7 +22,7 @@ RECORDS = [
         "instrument_type": "ICP-MS",
         "category": "仪器操作",
         "source_url": "https://www.epa.gov/esam/epa-method-2008-determination-trace-elements-waters-and-wastes-inductively-coupled-plasma-mass",
-        "file_path": "data/raw/epa_200_8_v1.pdf",
+        "file_path": "data/raw/epa_200_8_V1.pdf",
         "created_at": "2026-10-01",
     },
     {
@@ -35,7 +35,7 @@ RECORDS = [
         "instrument_type": "ICP-MS",
         "category": "仪器操作",
         "source_url": "https://www.epa.gov/esam/epa-method-2008-determination-trace-elements-waters-and-wastes-inductively-coupled-plasma-mass",
-        "file_path": "data/raw/epa_200_8_v2.pdf",
+        "file_path": "data/raw/epa_200_8_V2.pdf",
         "created_at": "2026-10-01",
     },
     # —— 第 2 组多版本：GC-MS 操作规程 ——
