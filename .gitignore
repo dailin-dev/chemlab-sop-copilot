@@ -22,3 +22,5 @@ data/processed/*
 .vscode/
 .DS_Store
 Thumbs.db
+
+!data/processed/sop_metadata.csv
