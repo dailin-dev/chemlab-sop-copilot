@@ -24,3 +24,7 @@ data/processed/*
 Thumbs.db
 
 !data/processed/sop_metadata.csv
+
+data/vectorstore/
+
+!data/processed/chunks.jsonl
