@@ -1,0 +1,324 @@
+[
+  {
+    "id": "R01",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP 资料，关于 ICP-MS 分析前的校准，可确认以下内容：\n\n1. 校准有效性验证：标准溶液中所有分析物的分析结果必须在校准值的 ±10% 以内，方可认为校准仍然有效 [2]。\n2. 若无法在规定限值内验证校准，则必须重新校准仪器 [2]。\n3. 校准检查所得的仪器响应可用于重新校准，但在继续样品分析前必须对其进行验证 [2]。\n4. 若连续校准检查（continuing calibration check）未能在 ±15% 以内得到确认，则重新校准后必须对之前 10 个样品进行重新分析 [2]。\n5. 若校准漂移由样品基体引起，建议将之前 10 个样品分成每组 5 个，在两次校准检查之间重新分析，以防止类似漂移再次发生 [2]。\n\n需要说明的是，资料中未提供 ICP-MS 初始校准的具体配制步骤、标准浓度点数量或内标设置等细节，根据现行 SOP 无法确认该信息。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "校准",
+      "标准"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R02",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP 无法确认该信息。\n\n检索到的资料中，<资料1> 仅为 EPA Method 200.8（ICP-MS）第17页的一句片段（\"preparation has been completed.\"），未包含 ICP-MS 的启动与调谐步骤；<资料2>、<资料5> 为 GC/MS 方法（8260D），<资料3> 为 ICP-AES 方法（200.7），<资料4> 为微波消解方法（3015A），均与 ICP-MS 启动调谐无关。因此无法依据现有资料给出该程序。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [],
+    "point_ratio": 0.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R03",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP 资料，可确认的内容如下：\n\n1. 测定水样和废物中痕量元素可采用电感耦合等离子体质谱法（ICP-MS），依据为 EPA Method 200.8 [1]。\n\n2. 对于水样和固体样品中“总可回收分析物”（total recoverable analytes）的测定，当元素未处于溶解状态时（例如土壤、污泥、沉积物，以及可能含颗粒物和悬浮固体的水样），分析前需要进行消解/提取 [4]。\n\n3. 进样测定时，应留出足够的冲洗时间以去除前一样品的残留（参见 Section 4.1.5）；在采集数据前，溶液应吸入 30 秒，以使体系达到平衡 [5]。\n\n关于 ICP-MS 测定的完整分步操作程序（如具体消解步骤、仪器参数、校准要求等），根据现行 SOP 无法确认该信息。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "痕量元素"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R04",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP 无法确认该信息。\n\n所给资料（EPA Method 8260D，版本 V2.0，current）仅包含参考文献条目及示例气相色谱图（Figure 1、Figure 2）的图注 [1][2][3][4][5]，未提供 GC-MS 测定挥发性有机物的具体操作步骤、前处理方式、仪器参数或定量方法等内容，因此无法据此作答。如需该信息，请提供 8260D 中方法正文（如范围、干扰、仪器与材料、试剂、样品前处理、校准、质量控制等章节）的相关资料。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [],
+    "point_ratio": 0.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R05",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP 资料，可确认的信息如下：\n\n1. 金属和痕量元素可通过电感耦合等离子体原子发射光谱法（ICP-AES，即 ICP 光学发射光谱法）测定，适用基质包括水、废物、沉积物、污泥和油类 [资料1][资料2][资料3]。\n\n2. 所用仪器为电感耦合等离子体发射光谱仪，应为计算机控制、具备背景校正能力的发射光谱仪 [资料4]。\n\n3. 样品前处理可采用微波辅助酸消解（如 EPA Method 3051A），消解后用于 ICP-AES 或 ICP-MS 测定；但资料指出，加入 HCl 可能限制定量方法，或增加某些技术的定量难度 [资料2]。\n\n4. 关于具体的仪器参数、操作步骤、波长选择、校准要求等，根据现行 SOP 无法确认该信息。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "金属"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R06",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP（EPA Method 3015A，版本 V1.0，current），水样微波消解的操作流程如下：\n\n1. 将水样（或提取液）置于微波消解罐或消解罐内衬中 [资料2]。\n2. 密封消解罐，放入微波消解仪中，按规定时间加热 [资料2]。\n3. 加热完成后冷却 [资料2]。\n4. 冷却后将罐内内容物进行过滤、离心或静置沉降处理 [资料2]。\n5. 随后定容，并用适当的测定方法进行分析 [资料2]。\n\n补充说明：微波消解仪内应保证微波辐射分布均匀，转盘转速应不低于 3 rpm；也可采用其他有助于实现微波场均匀性的设备 [资料5]。所用器皿包括 A 级或适当的机械移液管、容量瓶或量筒，容量为 50 或 100 mL 或相当规格 [资料5]。\n\n注：资料3、资料4 来自 Method 3051A（适用于沉积物、污泥和油类），并非水样消解方法，此处不作为水样操作依据。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [],
+    "point_ratio": 0.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R07",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP（EPA Method 3051A）[2][3]，沉积物和污泥的微波消解流程如下：\n\n1. 将样品置于微波消解罐或罐内衬中 [2]。\n2. 密封消解罐，放入微波消解仪中，按规定时间加热 [2]。\n3. 冷却后，将罐内内容物进行过滤、离心或静置沉降 [2]。\n4. 随后定容，并用适当的测定方法进行分析 [2]。\n\n补充说明：所用微波消解仪应确保微波辐射在仪器内均匀分布，转盘转速应不低于 3 rpm；也可采用其他有助于实现微波场均匀性的设备 [5]。\n\n注：资料1 为 EPA Method 3015A，适用于水样和萃取液，不适用于沉积物和污泥；资料4 为挥发性有机物 GC/MS 方法，与本问题无关。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [],
+    "point_ratio": 0.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R08",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP，分析过程中要求的质量控制空白如下：\n\n1. **实验室试剂空白（laboratory reagent blanks）**：需定期分析，作为性能的持续检查 [1][2]。\n2. **加标空白（fortified blanks）**：需定期分析，作为性能的持续检查 [1][2]。\n\n此外，资料3提到还需使用其他空白（other blanks）以追踪提取和分析过程中样品的潜在污染，但具体空白类型需参照 Chapter One 的质量控制程序 [3]。\n\n需注意：对于溶解态分析物测定或浊度 <1 NTU 的饮用水直接分析，LRB、LFB 和 LFM 的样品消解步骤不要求执行 [4]。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "blank"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R09",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP 资料，实验室发生化学品泄漏的应急处理要求如下：\n\n1. 事故实验室应立即根据事故的性质、严重程度、可控性和影响范围等因素，启动本实验室相应等级的事故应急处置预案，采取有效措施控制事故的危害和影响，并上报学院、学校上级主管部门或相关部门 [1]。\n\n2. 各涉及化学实验的实验室应事先制定本实验室化学安全事故应急处置预案，落实应急救援人员和应急救援器材、设备，并定期组织应急救援演练 [1]。\n\n3. 实验室应根据危险程度，配备相应的应急物品（如呼吸器、解毒药品、特殊灭火器材等），并做好应急防范措施 [5]。\n\n4. 实验室应根据所涉及化学品的种类和危险特性，在实验场所设置相应的监测、监控、通风、防毒、中和、防泄漏以及防护围堤或者隔离操作等安全设施、设备，并经常性维护、保养，保证其正常使用 [2]。\n\n需要说明的是，现行 SOP 资料中未给出化学品泄漏的具体操作步骤（如吸附、围堵、中和等具体处置方法），如需此类细节，建议查阅本实验室依据第三十八条制定的专项应急处置预案 [1]。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "泄漏",
+      "应急"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "R10",
+    "type": "rag_basic",
+    "answer": "根据现行 SOP 资料，实验室化学品安全管理的基本要求如下：\n\n1. **落实责任体系**：各涉及化学品实验活动的实验室是化学品安全的直接责任单位，实验室负责人为直接责任人，应做好化学品采购、接收、自制、运输、储存、使用及废弃处置全过程管理 [1]。\n\n2. **规范采购与标识**：严格按照规范途径采购化学品，并配备相应的化学品安全技术说明书（SDS）和安全标签 [1]。\n\n3. **严格储存与台账管理**：按实验室化学品存储要求保管危化品，落实危险化学品管理台账和使用台账建设，使用学校实验室安全管理系统做好入库、使用、回收、出库等线上登记，定期盘查，及时清理并妥善处理过期或长期不用的化学品 [1]。\n\n4. **制定安全规范与操作规程**：针对本实验室涉及的危险源制订相应的安全管理规范和安全操作规程 [1]；危险性实验的安全操作规程应张贴上墙或置于显眼位置 [4]。\n\n5. **贯彻安全方针并公示制度**：认真贯彻“安全第一、预防为主”的方针，根据本实验室具体情况制定安全管理办法和操作规程，并悬挂公示 [3]。\n\n6. **执行安全准入制度**：进入实验室开展实验的所有人员，都必须进行实验室安全培训并考试合格，经指导老师及学院同意方可进入 [3]；涉及使用剧毒化学品的人员，还应按国家要求接受岗前培训，持证上岗 [4]。\n\n7. **规范化学品使用**：使用前应充分了解药品、试剂的物理化学性质、危险性及应急措施（参阅 MSDS 卡片）；化学药品、试剂必须分类存放，标签清晰牢固，实行固/液分开、酸/碱分开、氧化物/还原物分开放置等原则；药品置于药品柜中，严禁私自将化学试剂及药品带出实验室；禁止在反应加热装置边上放置有机试剂和药品，禁止在水池下面柜子里存放试剂和药品；处置挥发性药品试剂或实验产生有毒有害及挥发性物质时，必须在开启的通风橱内完成，无人在通风柜前操作时需保持通风柜门的最低开度 [3]。\n\n8. **危险化学品特殊管理**：对剧毒、易燃、易爆及易制毒品等化学试剂的申购、保管和使用，必须坚持“五双”原则，并按学校及相关部门要求做好危化品使用台账 [3]。\n\n9. **实验值守要求**：凡涉及化学品的实验应有人值守；危险性较大的实验项目，其危险操作环节必须安排两人或两人以上同时在场；风险较低但需较长时间的过夜实验，实验室负责人可委托具有该实验室准入资格且熟悉该实验项目的同组人员定时监控，并向学院报备 [4]。\n\n10. **应急与防护配备**：建立本实验室所涉及危险化学品的化学品安全技术说明书档案，便于查阅；根据危险程度配备相应的应急物品（如呼吸器、解毒药品、特殊灭火器材等），并做好应急防范措施；实验操作人员应熟悉所使用危险化学品的性质和安全防护措施，严格按照操作规程作业，做好个人安全防护 [4]。\n\n11. **安全设施维护与警示**：按国家标准、行业标准或国家有关规定对安全设施、设备进行经常性维护、保养，保证其正常使用；相关场所和安全设施、设备上应设置明显的安全警示标志 [4]。\n\n12. **“三废”处理**：实验室产生的“三废”应严格按照学校的要求分类处理 [3]。",
+    "tools_called": [],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "安全"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "V01",
+    "type": "version_check",
+    "answer": "**SOP-ICPMS-001 的 V1.0 版本已废止（superseded），不再有效。**\n\n- 文档标题：EPA Method 200.8: Determination of Trace Elements in Waters and Wastes by Inductively Coupled Plasma-Mass Spectrometry\n- V1.0：生效日期 2026-04-08，失效日期 2026-09-01，状态为**已废止**\n- **现行版本：V2.0**（生效日期 2026-09-01，无失效日期）\n\n提醒：请勿再依据 V1.0 执行操作，请改用现行版本 **V2.0**。如需了解 V1.0 与 V2.0 的具体差异，我可以帮您做版本对比。\n\n**参考依据**\n- 文档：SOP-ICPMS-001《EPA Method 200.8: Determination of Trace Elements in Waters and Wastes by Inductively Coupled Plasma-Mass Spectrometry》\n- 版本：V1.0（已废止，失效日期 2026-09-01）；V2.0（现行，生效日期 2026-09-01）\n- 来源：check_version_status 工具返回结果",
+    "tools_called": [
+      "check_version_status"
+    ],
+    "expected_tool": "check_version_status",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "V2.0",
+      "废止"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "V02",
+    "type": "version_check",
+    "answer": "**不是。SOP-GCMS-001 的 V1.0 已废止（superseded），现行版本为 V2.0。**\n\n具体情况如下：\n\n| 版本 | 生效日期 | 失效日期 | 状态 |\n|---|---|---|---|\n| V1.0 | 2017-02-10 | 2025-08-06 | 已废止（superseded） |\n| **V2.0** | 2025-08-06 | — | **现行（current）** |\n\n提醒：V1.0 已于 2025-08-06 失效，请勿再依据该版本执行操作，请改用现行版本 **V2.0**。\n\n如需了解 V1.0 与 V2.0 之间的具体差异，我可以为您做版本对比。\n\n**参考依据**\n- 文档：SOP-GCMS-001《EPA Method 8260D (SW-846): Volatile Organic Compounds by Gas Chromatography-Mass Spectrometry (GC/MS)》\n- 版本：V1.0（已废止，失效日期 2025-08-06）；V2.0（现行，生效日期 2025-08-06）\n- 来源：check_version_status 工具返回结果",
+    "tools_called": [
+      "check_version_status"
+    ],
+    "expected_tool": "check_version_status",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "V2.0"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "V03",
+    "type": "version_check",
+    "answer": "SOP-ICPMS-001 的当前现行版本为 **V2.0**（生效日期 2026-09-01，无到期日期）。\n\n同时提醒：该文档的旧版本 **V1.0 已废止（superseded）**，其有效期为 2026-04-08 至 2026-09-01，请勿再依据 V1.0 执行操作，应使用现行版本 V2.0。\n\n参考依据：\n- 文档：SOP-ICPMS-001《EPA Method 200.8: Determination of Trace Elements in Waters and Wastes by Inductively Coupled Plasma-Mass Spectrometry》\n- 版本：V1.0（已废止，有效期 2026-04-08～2026-09-01）；V2.0（现行，生效 2026-09-01）\n- 来源：check_version_status 工具返回结果",
+    "tools_called": [
+      "check_version_status"
+    ],
+    "expected_tool": "check_version_status",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "V2.0"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "V04",
+    "type": "version_check",
+    "answer": "**SOP-GCMS-001 现在应使用 V2.0 版本。**\n\n版本情况如下：\n\n| 版本 | 生效日期 | 失效日期 | 状态 |\n|---|---|---|---|\n| V1.0 | 2017-02-10 | 2025-08-06 | 已废止（superseded） |\n| V2.0 | 2025-08-06 | — | 现行有效（current） |\n\n提醒：V1.0 已于 2025-08-06 起废止，请勿再依据 V1.0 执行操作，现行版本为 **V2.0**。\n\n如需了解 V1.0 与 V2.0 之间的具体差异，我可以为您做版本对比。\n\n**参考依据**\n- 文档：SOP-GCMS-001《EPA Method 8260D (SW-846): Volatile Organic Compounds by Gas Chromatography-Mass Spectrometry (GC/MS)》\n- 版本：V1.0（已废止，失效日期 2025-08-06）；V2.0（现行，生效日期 2025-08-06）\n- 来源：check_version_status 工具返回结果",
+    "tools_called": [
+      "check_version_status"
+    ],
+    "expected_tool": "check_version_status",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "V2.0"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "C01",
+    "type": "compare",
+    "answer": "# SOP-ICPMS-001 版本对比结果\n\n## 一、版本状态与元数据差异\n\n| 项目 | V1.0 | V2.0 |\n|---|---|---|\n| 生效日期 | 2026-04-08 | 2026-09-01 |\n| 失效日期 | 2026-09-01 | （空，未设失效日期） |\n| 状态 | **已废止（superseded）** | **现行（current）** |\n\n**重要提醒：V1.0 已于 2026-09-01 起废止，现行有效版本为 V2.0。请勿再依据 V1.0 执行操作。**\n\n## 二、章节内容差异\n\n工具返回的 V1.0 与 V2.0 章节摘录**在内容上完全一致**，均包含以下章节，且文本相同：\n\n- 方法标题页（METHOD 200.8，Revision 5.4 EMMC Version）\n- 1.0 SCOPE AND APPLICATION（适用范围）\n- 2.0 SUMMARY OF METHOD（方法摘要）\n- 3.0 DEFINITIONS（定义）\n- 4.0 INTERFERENCES（干扰）\n- 5.0 SAFETY（安全）\n\n即：**从工具返回的摘录来看，两版在正文内容上未体现出实质性差异**，主要变化在于版本号、生效/失效日期及有效性状态（V1.0 废止、V2.0 现行）。\n\n## 三、说明\n\n本次对比仅覆盖工具返回的上述章节摘录。若您需要确认某一具体章节（如校准、质量控制、仪器参数等）是否在两版间有改动，请告知具体章节或关注点，我可以进一步检索现行 V2.0 的对应内容进行核对。\n\n---\n\n**参考依据**\n- 文档：SOP-ICPMS-001（METHOD 200.8 DETERMINATION OF TRACE ELEMENTS IN WATERS AND WASTES BY ICP-MS）\n- 版本：V1.0（状态：superseded，生效 2026-04-08，失效 2026-09-01）；V2.0（状态：current，生效 2026-09-01）\n- 章节：标题页、1.0 SCOPE AND APPLICATION、2.0 SUMMARY OF METHOD、3.0 DEFINITIONS、4.0 INTERFERENCES、5.0 SAFETY\n- 来源：compare_versions 工具返回结果",
+    "tools_called": [
+      "compare_versions"
+    ],
+    "expected_tool": "compare_versions",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "V1.0",
+      "V2.0"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "C02",
+    "type": "compare",
+    "answer": "# SOP-GCMS-001 版本差异对比\n\n## 一、版本状态（关键信息）\n\n| 版本 | 生效日期 | 失效日期 | 状态 |\n|------|----------|----------|------|\n| **V1.0** | 2017-02-10 | 2025-08-06 | **已废止（superseded）** |\n| **V2.0** | 2025-08-06 | — | **现行有效（current）** |\n\n> **重要提醒：V1.0 已于 2025-08-06 废止，请勿再使用。现行版本为 V2.0。**\n\n## 二、章节内容对比\n\n从工具返回的章节摘录来看，V1.0 与 V2.0 在以下章节的文本内容**完全一致**：\n\n- 封面/目录（METHOD 8260D 挥发性有机物 GC/MS 测定）\n- **1.0 SCOPE AND APPLICATION**（适用范围）\n- **1.3** 特殊化合物注意事项（1.3.1 碱类回收受 pH 影响、1.3.2 脱卤化氢、1.3.7 氯乙烯与苯乙烯的化学活性损失）\n- **1.4** 使用前查阅基础方法（5000、8000 系列）\n- **2.0 SUMMARY OF METHOD**（方法概要）\n- **4.0 INTERFERENCES**（干扰）\n\n## 三、差异结论\n\n**依据工具返回的内容，本次对比仅能确认版本元数据（生效/失效日期、状态）存在差异，未检索到 V1.0 与 V2.0 在章节正文上的实质性文字差异。**\n\n需要说明的是：\n- 工具返回的摘录为**部分章节**（1.0、1.3、1.4、2.0、4.0 等），并非全文；\n- 因此**无法确认**未返回章节（如质量控制、仪器参数、计算、安全等章节）是否存在差异。\n\n如需确认具体章节（例如 QC 要求、仪器参数）是否有变化，请告知具体章节或关注点，我可以进一步检索现行 V2.0 的对应内容。\n\n---\n\n**参考依据**\n- 文档：SOP-GCMS-001（METHOD 8260D VOLATILE ORGANIC COMPOUNDS BY GAS CHROMATOGRAPHY/MASS SPECTROMETRY）\n- 版本：V1.0（生效 2017-02-10，失效 2025-08-06，已废止）；V2.0（生效 2025-08-06，现行）\n- 章节：1.0 SCOPE AND APPLICATION、1.3、1.4、2.0 SUMMARY OF METHOD、4.0 INTERFERENCES\n- 来源：compare_versions 工具返回结果",
+    "tools_called": [
+      "compare_versions"
+    ],
+    "expected_tool": "compare_versions",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "V1.0",
+      "V2.0"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "C03",
+    "type": "compare",
+    "answer": "# SOP-ICPMS-001 版本升级情况\n\n## 一、版本状态\n\n| 版本 | 生效日期 | 失效日期 | 状态 |\n|------|----------|----------|------|\n| V1.0 | 2026-04-08 | 2026-09-01 | **已废止（superseded）** |\n| V2.0 | 2026-09-01 | — | **现行（current）** |\n\n**提醒：V1.0 已于 2026-09-01 废止，请勿再使用。现行有效版本为 V2.0。**\n\n## 二、版本变化\n\n根据工具返回的对比结果，**V1.0 与 V2.0 的章节摘录内容完全一致**，包括：\n\n- 方法标题与来源（METHOD 200.8，Revision 5.4，EMMC Version）\n- 1.0 SCOPE AND APPLICATION（适用范围）\n- 2.0 SUMMARY OF METHOD（方法摘要）\n- 3.0 DEFINITIONS（定义）\n- 4.0 INTERFERENCES（干扰）\n- 5.0 SAFETY（安全）\n\n**可确认的差异仅为版本元数据**：版本号由 V1.0 升级为 V2.0，生效日期由 2026-04-08 变更为 2026-09-01，V1.0 状态转为已废止。\n\n**无法确认的部分**：工具返回的摘录中未体现任何正文内容（步骤、参数、质量控制等）的实质性修改。因此，我**无法确认**本次升级是否包含技术内容层面的变更——现有依据仅显示版本标识与生效日期的更新。如需确认正文是否有实质改动，建议进一步核对两版全文。\n\n---\n\n**参考依据**\n- 文档：SOP-ICPMS-001（METHOD 200.8 DETERMINATION OF TRACE ELEMENTS IN WATERS AND WASTES BY INDUCTIVELY COUPLED PLASMA - MASS SPECTROMETRY, Revision 5.4）\n- 版本：V1.0（已废止，生效 2026-04-08，失效 2026-09-01）；V2.0（现行，生效 2026-09-01）\n- 章节：1.0 SCOPE AND APPLICATION、2.0 SUMMARY OF METHOD、3.0 DEFINITIONS、4.0 INTERFERENCES、5.0 SAFETY\n- 来源：compare_versions 工具返回结果",
+    "tools_called": [
+      "compare_versions"
+    ],
+    "expected_tool": "compare_versions",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "V2.0"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "E01",
+    "type": "expiry_guard",
+    "answer": "**重要提醒：SOP-ICPMS-001 的 V1.0 版本已废止（superseded），不能用于指导操作。**\n\n根据版本核查结果：\n\n| 项目 | 内容 |\n|---|---|\n| 文档编号 | SOP-ICPMS-001 |\n| 标题 | EPA Method 200.8: Determination of Trace Elements in Waters and Wastes by Inductively Coupled Plasma-Mass Spectrometry |\n| V1.0 状态 | **已废止（superseded）**，有效期 2026-04-08 至 2026-09-01 |\n| 现行版本 | **V2.0**（自 2026-09-01 起生效） |\n\n因此，我无法按 V1.0 向您提供校准步骤——该版本已失效，依据已废止版本执行操作不符合质量体系要求。\n\n另外需要说明：我尝试检索现行 SOP 中的 ICP-MS 校准步骤，但检索返回的结果均为其他方法文档（如 EPA Method 8260D、Method 200.7）的片段，**未返回 SOP-ICPMS-001（Method 200.8）中关于校准步骤的具体内容**。因此，就\"校准步骤\"这一具体问题，我目前没有可依据的现行版本内容可供回答，无法确认其具体步骤。\n\n建议您：\n1. 确认使用现行版本 **V2.0**；\n2. 如需 V2.0 的校准步骤，我可以再尝试以更精确的关键词检索现行 SOP；若仍无法取得相应章节内容，则需查阅该文档原文。\n\n如果您希望了解 V1.0 与 V2.0 之间的具体差异，我可以调用版本对比工具为您列出。\n\n**参考依据**\n- 文档：SOP-ICPMS-001《EPA Method 200.8: Determination of Trace Elements in Waters and Wastes by Inductively Coupled Plasma-Mass Spectrometry》\n  - V1.0（已废止，有效期 2026-04-08 ~ 2026-09-01）\n  - V2.0（现行，自 2026-09-01 生效）\n  - 来源：check_version_status 工具返回\n- 检索来源：search_current_sop 工具返回（未命中 SOP-ICPMS-001 校准章节内容）",
+    "tools_called": [
+      "check_version_status",
+      "search_current_sop"
+    ],
+    "expected_tool": "check_version_status",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "废止",
+      "V2.0"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "E02",
+    "type": "expiry_guard",
+    "answer": "**结论：不可以直接照做。SOP-GCMS-001 V1.0 已废止（superseded），现行版本为 V2.0。**\n\n## 版本状态核查\n\n| 项目 | 内容 |\n|---|---|\n| 文档编号 | SOP-GCMS-001 |\n| 标题 | EPA Method 8260D (SW-846): Volatile Organic Compounds by Gas Chromatography-Mass Spectrometry (GC/MS) |\n| V1.0 生效日期 | 2017-02-10 |\n| V1.0 失效日期 | 2025-08-06 |\n| V1.0 状态 | **已废止（superseded）** |\n| 现行版本 | **V2.0**（生效日期 2025-08-06，无失效日期） |\n\n**提醒**：V1.0 已于 2025-08-06 失效，请勿再依据 V1.0 执行操作，应改用现行版本 **V2.0**。\n\n## 关于 V1.0 的校准要求\n\n我检索了现行 SOP 中与校准相关的内容，但**工具返回的检索结果均来自 V2.0 版本**，未返回 V1.0 的校准条款原文。因此，**我无法确认 V1.0 中具体的校准要求内容**，不能凭推测为您复述。\n\n## 现行版本（V2.0）中可确认的校准相关信息\n\n以下为检索到的 V2.0 内容摘录，供参考：\n\n- **11.3 ICAL（初始校准）**：建立 GC/MS 操作条件，参考条件包括质量范围 m/z 35–270；采集速率应保证每个峰至少采集 5 张质谱图（最好 10 张以上）；离子源温度按厂商规格设定；离子阱需按厂商建议设置轴向调制、歧管温度和发射电流。\n- **11.3.1**：GC/MS 系统必须能产生具有足够质量准确度、质量分辨率和信号强度的质谱，以用于目标分析物特征离子特定 m/z 的定量分析。\n- **7.12 基质加标与 LCS 标准品**：基质加标和 LCS 应使用与 ICAL 标准品同源的目标分析物配制，以限制准确度影响（参见 Method 5000）。\n- **质量控制指标（第 47 页表格）**：内标响应应在加入样品的内标响应的 50–200% 范围内；样品中保留时间应在中点 ICAL 或 CCV 标准品保留时间的 ±10 秒内；定性离子丰度比应在参考谱图预期离子比的 ±30% 内，或与参考谱库谱图匹配度 ≥0.8（仅适用于全质量范围采集模式）。\n\n## 建议\n\n1. 请以 **V2.0** 为准执行校准与质控操作。\n2. 若您需要了解 V1.0 与 V2.0 在校准要求上的**具体差异**，我可以调用版本对比工具为您生成新旧版本差异说明——请告知是否需要。\n\n---\n\n**参考依据**\n- SOP-GCMS-001《EPA Method 8260D (SW-846): Volatile Organic Compounds by Gas Chromatography-Mass Spectrometry (GC/MS)》，V1.0，生效 2017-02-10，失效 2025-08-06，状态：已废止 —— 来源：check_version_status\n- SOP-GCMS-001 同上文档，V2.0，生效 2025-08-06，状态：现行 —— 来源：check_version_status\n- 上述 V2.0 校准与质控内容：第 11.3、11.3.1、7.12 节及第 47 页质控指标表 —— 来源：search_current_sop（EPA 官网 https://www.epa.gov/esam/epa-method-8260d-sw-846-volatile-organic-compounds-gas-chromatography-mass-spectrometry-gcms）",
+    "tools_called": [
+      "check_version_status",
+      "search_current_sop"
+    ],
+    "expected_tool": "check_version_status",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "现行",
+      "V2.0"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  },
+  {
+    "id": "E03",
+    "type": "expiry_guard",
+    "answer": "I searched the current SOP library for ICP-MS maintenance contract information, but I could not find any content addressing this.\n\n**What I found:** The search returned only EPA analytical methods (Method 200.7, Method 200.8, Method 8260D) covering topics like calibration, QC acceptance criteria, and safety references. None of these documents contain an annual maintenance contract number for an ICP-MS instrument.\n\n**Conclusion:** I cannot confirm the annual maintenance contract number for the ICP-MS. This information does not appear in the current SOP documents available to me. Contract numbers are typically administrative/inventory records rather than analytical SOP content, so they may be held in a separate asset-management or procurement system rather than in the SOP library.\n\nIf you can provide the specific SOP document number or title (e.g., an instrument maintenance SOP), I can search again to check whether it contains this detail.\n\n**参考依据**\n- 检索工具：search_current_sop（查询：\"ICP-MS annual maintenance contract number\" / \"ICP-MS 年度维护保养合同编号\"）\n- 返回文档：EPA Method 200.7 (V1.0, current)；EPA Method 200.8 (V2.0, current)；EPA Method 8260D (V2.0, current) — 来源：https://www.epa.gov/esam/\n- 结论：上述现行文档中均未包含 ICP-MS 年度维护合同编号相关信息，无法确认。",
+    "tools_called": [
+      "search_current_sop",
+      "search_current_sop"
+    ],
+    "expected_tool": "search_current_sop",
+    "tool_ok": true,
+    "has_citation": true,
+    "point_hits": [
+      "无法确认"
+    ],
+    "point_ratio": 1.0,
+    "must_not_violations": [],
+    "needs_human_review": true
+  }
+]
