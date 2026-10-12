@@ -1,0 +1,15 @@
+.git
+.venv
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+*.pdf
+data/raw/
+data/vectorstore/
+logs/
+notes/
+docs/
+eval/
+tests/
+*.md
